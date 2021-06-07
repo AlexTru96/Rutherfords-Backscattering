@@ -1,0 +1,22 @@
+# Macro file 
+# 
+# Initialize kernel
+/run/initialize
+#
+/tracking/verbose 0
+# Magnetic field
+# 
+#/globalField/setValue 0.2 0 0 tesla
+#
+/process/list
+#/process/inactivate alphaInelastic
+/process/activate CoulombScat
+#/process/activate msc
+/gun/particle alpha
+/gun/energy 5.5 MeV
+/run/printProgress 100000
+/run/beamOn 100000
+#
+
+
+
